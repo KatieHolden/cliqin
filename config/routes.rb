@@ -1,4 +1,18 @@
 Cliqin::Application.routes.draw do
+  resources :answers
+
+  resources :questions
+
+  resources :question_sets
+
+  resources :in_courses
+
+  resources :courses
+
+  resources :instructors
+
+  resources :students
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

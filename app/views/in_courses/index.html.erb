@@ -1,0 +1,25 @@
+<h1>Listing in_courses</h1>
+
+<table>
+  <tr>
+    <th>Courseid</th>
+    <th>Uniqname</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @in_courses.each do |in_course| %>
+  <tr>
+    <td><%= in_course.courseID %></td>
+    <td><%= in_course.uniqname %></td>
+    <td><%= link_to 'Show', in_course %></td>
+    <td><%= link_to 'Edit', edit_in_course_path(in_course) %></td>
+    <td><%= link_to 'Destroy', in_course, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New In course', new_in_course_path %>

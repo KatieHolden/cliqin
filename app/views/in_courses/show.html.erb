@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Courseid:</b>
+  <%= @in_course.courseID %>
+</p>
+
+<p>
+  <b>Uniqname:</b>
+  <%= @in_course.uniqname %>
+</p>
+
+
+<%= link_to 'Edit', edit_in_course_path(@in_course) %> |
+<%= link_to 'Back', in_courses_path %>
