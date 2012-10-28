@@ -14,7 +14,7 @@
 	<header class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to "sample app", '#', :id => "logo" %>
+          <%= link_to "Cliqin Classmate Assistant", '#', :id => "logo" %>
           <nav>
             <ul class="nav pull-right">
               <li><a href="#">Home</a></li>
@@ -27,17 +27,11 @@
     </header>
     <div class="container">
       <%= yield %>
-      
+
     </div>
 
-    <div class="center hero-unit">
-  <h1>Welcome to Cliqin</h1>
 
 
-  <%= link_to "Sign up now!", '#', :class => "btn btn-large btn-primary" %>
-</div>
-
-<%= link_to image_tag("rails.png", :alt => "Rails"), 'http://rubyonrails.org/' %>
 <%= render 'layouts/footer' %>
 
 </body>
