@@ -25,6 +25,9 @@ group :production do
   gem 'pg', '0.12.2'
 end
 
+gem 'therubyracer'
+gem 'execjs'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -39,4 +42,4 @@ end
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
+ gem 'ruby-debug'
