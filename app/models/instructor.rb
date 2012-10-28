@@ -15,6 +15,6 @@ class Instructor < ActiveRecord::Base
 
   before_save { |instructor| instuctor.login = login.downcase }
 
-  validates :login, presense: true, length: { maximum: 8}, uniqueness: true
-  validates :password, presence: true, length: { minimum: 8}
+  validates :login, :presence => true, :length => { :maximum => 8}, :uniqueness => true
+  validates :password, :presence => true, :length => { :minimum => 8}
 end

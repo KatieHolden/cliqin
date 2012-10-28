@@ -13,6 +13,6 @@ class Answer < ActiveRecord::Base
   attr_accessible :question_id, :text
   belongs_to :question
 
-  validates :question_id, presence: true
-  validates :text, presence: true
+  validates :question_id, :presence => true
+  validates :text, :presence => true
 end
